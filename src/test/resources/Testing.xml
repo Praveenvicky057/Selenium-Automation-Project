@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+<listeners>
+        <listener class-name="com.pages.TestListener"/>
+    </listeners>
+
+  <test thread-count="5" name="Test">
+  <parameter name="url" value="https://demoqa.com/"></parameter>
+    <classes>
+    <groups>
+  <run>
+        <include name ="Regression"/>
+          <include name ="Functional"/>
+            <include name ="Smoke"/>
+  </run>
+  </groups>
+      <class name="com.pages.TestPages"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+  
